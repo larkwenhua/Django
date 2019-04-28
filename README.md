@@ -1,2 +1,2 @@
 # Django
-django学习
+2019-4-28 学习Django框架
