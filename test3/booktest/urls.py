@@ -1,5 +1,6 @@
 from django.conf.urls import url
 from . import views
+app_name ='[booktest]'
 urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^(?P<p3>\d+)/(?P<p2>\d+)/(?P<p1>\d+)/$', views.detail, name='detail'),
