@@ -16,6 +16,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+# urlpatterns = [
+#     path('admin/', admin.site.urls),
+# ]
+from django.conf.urls import url
+from django.contrib import admin
+from booktest import views
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    url(r'^admin/', admin.site.urls),
+    url(r'^index/', views.index),
+    url(r'^login/', views.login),
+    url(r'^get_valid_img.png/', views.get_valid_img),
 ]
