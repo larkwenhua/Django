@@ -5,12 +5,12 @@
     <title>Title</title>
 </head>
 <body>
-<from action="verifyTest2" method="post">
+<form method="post" action="verifyTest2" >
     {% csrf_token %}
-    <input type="text" name="code1">
+    <input type="text" name="code_new">
     <img src="verifyCode">
     <input type="submit" value="提交">
-</from>
+</form>
 
 
 </body>
